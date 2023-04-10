@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator page</title>
+    <!--Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/calc.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="/index.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+    <!-- Main section -->
+    <section>
+        <div class="main-block">
+            <div>
+                <h2><span class="mult-text"></span></h2>
+            </div>
+            <h3>Your Gender</h3>
+            <div class="btn" id="gender">
+                <button id="woman" class="active1">
+                    Woman
+                </button>
+                <button id="man">
+                    Man
+                </button>
+            </div>
+            <div>
+                <h3>Enter Your body info</h3>
+            </div>
+            <div class="btn">
+                <input type='text' id="height" placeholder="height"></input>
+                <input type='text' id="weight" placeholder="weight"></input>
+                <input type='text' id="age" placeholder="age"></input>
+            </div>
+            <div>
+                <h3>Select your activity</h3>
+            </div>
+            <div class="btn calculating">
+                <button data-ratio="1.2" class="active1">low</button>
+                <button data-ratio="1.375">small</button>
+                <button data-ratio="1.55">normal</button>
+                <button data-ratio="1.725">hight</button>
+            </div>
+            <span>============</span>
+            <div>
+                <h3>Your daily calories: <span class="result">2700</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Created in 2023 by Dmitry Vishnyakov</p>
+        </div>
+
+        <div class="footer-iconsTop">
+            <a href="#header"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="/modules/calc.js"></script>
+
+</body>
+
+</html>
