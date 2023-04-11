@@ -32,18 +32,6 @@ window.onscroll = () => {
 };
 
 
-ScrollReveal({ 
-    //reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-});
-
-ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-ScrollReveal().reveal('.home-img, .portfolio-box, .contact form', {origin: 'bottom'});
-ScrollReveal().reveal('.home-container h1, .about-img', {origin: 'left'});
-ScrollReveal().reveal('.home-container p, .about-content', {origin: 'right'});
-
 const tyepd = new Typed('.multiple-text', {
     strings: ['Frontend Develover!'],
     typeSpeed: 100,

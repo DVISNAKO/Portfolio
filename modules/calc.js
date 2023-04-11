@@ -31,8 +31,6 @@ function initLocalSetting(selector, active1) {
     })
 }
 
-
-
 initLocalSetting('#gender button', 'active1');
 initLocalSetting('.calculating button', 'active1');
 
@@ -113,7 +111,7 @@ const tyepd = new Typed('.mult-text', {
     typeSpeed: 50,
     backSpeed: 100,
     backDelay: 1000,
-    loop: true
+    loop: false
 })
 
 

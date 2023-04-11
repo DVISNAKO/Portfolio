@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider Project</title>
-     <!--Icons-->
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/slider.css">
 </head>
 
@@ -27,20 +27,12 @@
         </nav>
     </header>
     <!-- Main section -->
-
     <section>
+        <div class="text-slider">
+            <span class="multiple-text-slider"></span>
+        </div>
         <div class="main__block">
-            <div class="slider__counter">
-                <div class="slider__prev">
-                    <span><i class='bx bxs-chevron-left' ></i></span>
-                </div>
-                <span id="curr">03</span>
-                <span>/</span>
-                <span id="total">04</span>
-                <div class="slider__next">
-                    <span><i class='bx bxs-chevron-right' ></i></span>
-                </div>
-            </div>
+
             <div class="slider__wrapper">
                 <div class="offer__slider"></div>
                 <img src="/images/apple-1.jpg" alt="one">
@@ -57,9 +49,19 @@
                 <div class="offer__slider"></div>
                 <img src="/images/apple-4.jpg" alt="four">
             </div>
+            <div class="slider__counter">
+                <div class="slider__prev">
+                    <span><i class='bx bxs-chevron-left'></i></span>
+                </div>
+                <span id="curr">03</span>
+                <span>/</span>
+                <span id="total">04</span>
+                <div class="slider__next">
+                    <span><i class='bx bxs-chevron-right'></i></span>
+                </div>
+            </div>
         </div>
     </section>
-
 
     <!-- footer design -->
     <footer class="footer">
@@ -74,5 +76,6 @@
 
 </body>
 <script src="/modules/slider.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
 
 </html>
