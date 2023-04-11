@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Slider Project</title>
+     <!--Icons-->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/slider.css">
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="/index.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+    <!-- Main section -->
+
+    <section>
+        <div class="main__block">
+            <div class="slider__counter">
+                <div class="slider__prev">
+                    <span><i class='bx bxs-chevron-left' ></i></span>
+                </div>
+                <span id="curr">03</span>
+                <span>/</span>
+                <span id="total">04</span>
+                <div class="slider__next">
+                    <span><i class='bx bxs-chevron-right' ></i></span>
+                </div>
+            </div>
+            <div class="slider__wrapper">
+                <div class="offer__slider"></div>
+                <img src="/images/apple-1.jpg" alt="one">
+            </div>
+            <div class="slider__wrapper">
+                <div class="offer__slider"></div>
+                <img src="/images/apple-2.jpg" alt="two">
+            </div>
+            <div class="slider__wrapper">
+                <div class="offer__slider"></div>
+                <img src="/images/apple-3.jpg" alt="three">
+            </div>
+            <div class="slider__wrapper">
+                <div class="offer__slider"></div>
+                <img src="/images/apple-4.jpg" alt="four">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Created in 2023 by Dmitry Vishnyakov</p>
+        </div>
+
+        <div class="footer-iconsTop">
+            <a href="#header"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
 </body>
-<script scr="/modules/slider.js"></script>
+<script src="/modules/slider.js"></script>
+
 </html>
