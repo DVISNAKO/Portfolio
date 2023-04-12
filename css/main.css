@@ -178,6 +178,15 @@ img {
     font-size: 4.5rem;
 }
 
+li {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#think {
+    font-size: 2rem;
+}
+
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
