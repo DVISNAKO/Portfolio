@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/modal.css" <title>Modal project</title>
+    <link rel="stylesheet" href="/css/modal.css">
+   
 </head>
 
 <body>
@@ -27,18 +28,33 @@
     <!-- Main section -->
     <section>
         <div class="text">
-            <h3>For 5 seconds you will see modal window </h3>
+            <h3>For 3 seconds you will see modal window </h3>
         </div>
         <div class="modal-btn">
-            <button id='button' type="submit">Show Modal</button>
+            <button class='openModal' data-modal">Show Modal</button>
         </div>
 
-        <div class="modal hide">
+        <div class="modal">
             <div class="modal-close">X</div>
             <div class="modal-text">
                 <h3>Hello I'm a modal window</h3>
             </div>
         </div>
+
+        <div class="modal2 hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <form action="#">
+                        <div class="modal__close" data-close>&times;</div>
+                        <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                        <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                        <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                        <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- footer design -->
@@ -52,7 +68,7 @@
         </div>
     </footer>
 
-    <script href="/modules/modal.js"></script>
+    <script src="/modules/modal.js"></script>
 </body>
 
 </html>
